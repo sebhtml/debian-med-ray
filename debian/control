@@ -1,7 +1,9 @@
 Source: ray
 Section: science
 Priority: extra
-Maintainer: Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Uploaders: Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>,
+           Tim Booth <tbooth@ceh.ac.uk>
 Build-Depends: debhelper (>= 7.0.50~),
 	zlib1g-dev,
 	libbz2-dev,

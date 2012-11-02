@@ -8,12 +8,13 @@ Build-Depends: debhelper (>= 7.0.50~),
 	zlib1g-dev,
 	libbz2-dev,
 	mpi-default-dev
-Standards-Version: 3.9.3
+Standards-Version: 3.9.1
 Homepage: http://denovoassembler.sourceforge.net/
 Vcs-Git: git://github.com/sebhtml/ray.git
 Vcs-Browser: https://github.com/sebhtml/ray
 
 Package: ray
+Section: science
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
 	mpi-default-bin
@@ -29,12 +30,23 @@ Description: parallel genome assemblies for parallel DNA sequencing
   - Ray Ontologies gene ontology profiling
 
 Package: ray-doc
+Section: doc
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Documentation files
+ Ray is a parallel software that computes de novo genome assemblies with   
+ next-generation sequencing data.
+ Ray is written in C++ and can run in parallel on numerous interconnected 
+ computers using the message-passing interface (MPI) standard.
 
 Package: ray-extra
+Section: science
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
-Recommends: ${python:Depends}, r-base-core
+  ${python:Depends}, r-base-core
 Description: Scripts and XSL sheets for post-processing
+ Ray is a parallel software that computes de novo genome assemblies with   
+ next-generation sequencing data.
+ Ray is written in C++ and can run in parallel on numerous interconnected 
+ computers using the message-passing interface (MPI) standard.
+

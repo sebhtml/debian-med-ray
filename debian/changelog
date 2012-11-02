@@ -1,3 +1,14 @@
+ray (2.1.0-4) stable; urgency=low
+
+  * Fixed the target distribution for debian 
+  * Fixed E: ray-doc: extended-description-is-empty
+  * Fixed E: ray-extra: extended-description-is-empty
+  * Fixed W: ray: binary-without-manpage usr/bin/Ray
+  * Fixed W: ray source: newer-standards-version 3.9.3 (current is 3.9.1)
+  * Fixed W: ray: manpage-has-useless-whatis-entry usr/share/man/man1/Ray.1.gz
+
+ -- Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>  Fri, 02 Nov 2012 19:39:00 +0000
+
 ray (2.1.0-3) precise; urgency=low
 
   * Added a man page

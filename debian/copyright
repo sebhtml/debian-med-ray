@@ -1,0 +1,28 @@
+This work was packaged for Debian by:
+
+    Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca> on Thu, 01 Nov 2012 14:52:24 -0400
+
+It was downloaded from:
+
+    http://sourceforge.net/projects/denovoassembler/files/
+
+Upstream Author(s):
+
+    Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>
+
+Copyright:
+
+    Copyright (C) 2009, 2010, 2011, 2012 Sébastien Boisvert
+
+License:
+
+    Ray is distributed under the GNU General Public License version 3
+    RayPlatform is distributed under the GNU Lesser General Public License version 3
+
+The Debian packaging is:
+
+    Copyright (C) 2012 Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>
+    Copyright (C) 2012 Tim Booth <tbooth@ceh.ac.uk>
+
+and is licensed under the GPL version 3,
+see "/usr/share/common-licenses/GPL-3".

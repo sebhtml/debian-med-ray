@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@ 
+
+override_dh_auto_clean :
+	dh_auto_clean --  HAVE_LIBZ=y HAVE_LIBBZ2=y
+	rm -rf install-prefix
+	rm -f README.Ray  README.RayPlatform
+
+override_dh_auto_build :
+	dh_auto_build -- HAVE_LIBZ=y HAVE_LIBBZ2=y
+	#Rename 2 docs to make more sence in package context
+	cp README.md README.Ray
+	cp RayPlatform/README README.RayPlatform
+

@@ -1,0 +1,29 @@
+Source: ray
+Section: science
+Priority: extra
+Maintainer: Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>
+Build-Depends: debhelper (>= 7.0.50~),
+	zlib1g-dev,
+	libbz2-dev,
+	mpi-default-dev,
+	python-support (>= 0.90)
+Standards-Version: 3.9.3
+Homepage: http://denovoassembler.sourceforge.net/
+Vcs-Git: git://github.com/sebhtml/ray.git
+Vcs-Browser: https://github.com/sebhtml/ray
+
+Package: ray
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+	mpi-default-bin
+Recommends: ${python:Depends}, r-base-core
+Description: parallel genome assemblies for parallel DNA sequencing
+ Ray is a parallel software that computes de novo genome assemblies with   
+ next-generation sequencing data.
+ Ray is written in C++ and can run in parallel on numerous interconnected 
+ computers using the message-passing interface (MPI) standard.
+ Included:
+  - Ray de novo assembly of single genomes
+  - Ray Méta de novo assembly of metagenomes
+  - Ray Communities microbe abundance + taxonomic profiling
+  - Ray Ontologies gene ontology profiling

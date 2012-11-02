@@ -1,0 +1,29 @@
+Description: <short summary of the patch>
+     Patched makefile to keep g++ linker on Ubuntu happy - -l flags
+     have to come after files to link for some reason.
+Author: Tim Booth <tbooth@ceh.ac.uk>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- ray-2.1.0.orig/Makefile
++++ ray-2.1.0/Makefile
+@@ -186,7 +186,7 @@ showOptions:
+ 	
+ # how to make Ray
+ Ray: showOptions RayPlatform/libRayPlatform.a code/TheRayGenomeAssembler.a
+-	$(MPICXX) $(LDFLAGS)  code/TheRayGenomeAssembler.a RayPlatform/libRayPlatform.a -o $@
++	$(MPICXX) code/TheRayGenomeAssembler.a RayPlatform/libRayPlatform.a $(LDFLAGS) -o $@
+ 	@echo $(PREFIX) > PREFIX
+ 	@echo Ray > TARGETS
+ 

@@ -1,0 +1,25 @@
+ray (2.1.0-2) precise; urgency=low
+
+  * Some tweaks:
+    1. Added a watch file to make "uscan" work
+    2. Removed zlib1g and libbz2-1.0 runtime deps in control file as
+       ${shlibs:Depends} does this for you.  Also removed build-essential
+       and make as these are a given.
+    3. Removed "Ray -- " from the description to match standard convention
+    4. Patched makefile to keep g++ linker on Ubuntu happy
+    5. Updated clean target in rules - it need to remove every single thing
+       that the build makes.
+    6. Updated standards version in control
+    7. Added dependency on Python as there are Python scripts included
+    8. Added dep on r-base-core as there is an R script included
+    9. Don't package INSTALL.txt LICENSE.txt gpl-3.0.txt as license is given
+       in copyright file and user of package has no need to install.
+    10. Renamed the two README files.
+
+ -- Tim Booth <tbooth@ceh.ac.uk>  Fri, 02 Nov 2012 14:29:37 +0000
+
+ray (2.1.0-1) stable; urgency=low
+
+  * Initial Debian release
+
+ -- Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>  Thu, 01 Nov 2012 14:52:24 -0400

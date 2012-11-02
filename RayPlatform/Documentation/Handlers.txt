@@ -1,0 +1,60 @@
+Modularity of Ray using handlers
+Sébastien Boisvert
+2011-01-16
+
+
+
+== Illustration ==
+
++--------------------------------------------------------------------------+
+|                                                                          |
+|                                Application                               |
+|                                                                          |
++------------------------+------------------------+------------------------+
+|                        |                        |                        |
+|         Plugin         |         Plugin         |         Plugin         |
+|                        |                        |                        |
++---------+---------+    +---------+---------+    +---------+---------+    +
+|         |         |    |         |         |    |         |         |    |
+| Adapter | Adapter |    | Adapter | Adapter |    | Adapter | Adapter |    |
+|         |         |    |         |         |    |         |         |    |
++---------+---------+----+---------+---------+----+---------+---------+----+
+|                                                                          |
+|                                RayPlatform                               |
+|                                                                          |
++--------------------------------------------------------------------------+
+|                                                                          |
+|                        Message Passing Interface                         |
+|                                                                          |
++--------------------------------------------------------------------------+
+
+In Ray, the code to execute that depends on slave modes, master modes, and message tags
+is handled by handlers.
+
+There are 3 handler classes:
+
+- MessageTagHandler
+- MasterModeHandler
+- SlaveModeHandler
+
+
+This makes Ray (or any application using the Ray platform) modular.
+
+== MACROS ==
+
+__CreatePlugin	
+	declares a static pointer to a plugin
+
+__CreateMasterModeAdapter	
+	generates an implementation for an adapter
+
+__CreateSlaveModeAdapter
+	generates an implementation for an adapter
+
+__CreateMessageTagAdapter
+	generates an implementation for an adapter
+
+__BindPlugin
+	sets the value of the static pointer to the plugin
+
+

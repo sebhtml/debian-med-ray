@@ -1,3 +1,11 @@
+ray (2.1.0-3) precise; urgency=low
+
+  * Added a man page
+  * Now packaging 3 packages: ray, ray-extra, ray-doc
+  * Added Tim Booth as a uploader
+
+ -- Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>  Fri, 02 Nov 2012 18:57:00 +0000
+
 ray (2.1.0-2) precise; urgency=low
 
   * Some tweaks:

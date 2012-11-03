@@ -1,6 +1,5 @@
 ray (2.1.0-1) stable; urgency=low
 
-  * Initial Debian release
   * Fixed the target distribution for debian 
   * Fixed E: ray-doc: extended-description-is-empty
   * Fixed E: ray-extra: extended-description-is-empty
@@ -25,6 +24,7 @@ ray (2.1.0-1) stable; urgency=low
   * Added a man page
   * Now packaging 3 packages: ray, ray-extra, ray-doc
   * Added Tim Booth as a uploader
+  * Initial Debian release, Closes: #692238
 
  -- Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>  Fri, 02 Nov 2012 19:39:00 +0000
 

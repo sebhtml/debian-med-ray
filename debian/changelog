@@ -1,25 +1,13 @@
-ray (2.1.0-4) stable; urgency=low
+ray (2.1.0-1) stable; urgency=low
 
+  * Initial Debian release
   * Fixed the target distribution for debian 
   * Fixed E: ray-doc: extended-description-is-empty
   * Fixed E: ray-extra: extended-description-is-empty
   * Fixed W: ray: binary-without-manpage usr/bin/Ray
   * Fixed W: ray source: newer-standards-version 3.9.3 (current is 3.9.1)
   * Fixed W: ray: manpage-has-useless-whatis-entry usr/share/man/man1/Ray.1.gz
-
- -- Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>  Fri, 02 Nov 2012 19:39:00 +0000
-
-ray (2.1.0-3) precise; urgency=low
-
-  * Added a man page
-  * Now packaging 3 packages: ray, ray-extra, ray-doc
-  * Added Tim Booth as a uploader
-
- -- Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>  Fri, 02 Nov 2012 18:57:00 +0000
-
-ray (2.1.0-2) precise; urgency=low
-
-  * Some tweaks:
+  * Some tweaks (Tim Booth <tbooth@ceh.ac.uk>):
     1. Added a watch file to make "uscan" work
     2. Removed zlib1g and libbz2-1.0 runtime deps in control file as
        ${shlibs:Depends} does this for you.  Also removed build-essential
@@ -34,11 +22,16 @@ ray (2.1.0-2) precise; urgency=low
     9. Don't package INSTALL.txt LICENSE.txt gpl-3.0.txt as license is given
        in copyright file and user of package has no need to install.
     10. Renamed the two README files.
+  * Added a man page
+  * Now packaging 3 packages: ray, ray-extra, ray-doc
+  * Added Tim Booth as a uploader
 
- -- Tim Booth <tbooth@ceh.ac.uk>  Fri, 02 Nov 2012 14:29:37 +0000
+ -- Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>  Fri, 02 Nov 2012 19:39:00 +0000
 
-ray (2.1.0-1) stable; urgency=low
 
-  * Initial Debian release
 
- -- Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>  Thu, 01 Nov 2012 14:52:24 -0400
+
+
+
+
+

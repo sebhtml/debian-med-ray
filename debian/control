@@ -31,17 +31,18 @@ Description: parallel genome assemblies for parallel DNA sequencing
 
 Package: ray-doc
 Section: doc
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Documentation files
  Ray is a parallel software that computes de novo genome assemblies with   
  next-generation sequencing data.
  Ray is written in C++ and can run in parallel on numerous interconnected 
  computers using the message-passing interface (MPI) standard.
+ This sub-package includes documentation files.
 
 Package: ray-extra
 Section: science
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends},
   ${python:Depends}, r-base-core
 Description: Scripts and XSL sheets for post-processing
@@ -49,4 +50,4 @@ Description: Scripts and XSL sheets for post-processing
  next-generation sequencing data.
  Ray is written in C++ and can run in parallel on numerous interconnected 
  computers using the message-passing interface (MPI) standard.
-
+ This sub-package contains scripts and XSL sheets for post-processing.

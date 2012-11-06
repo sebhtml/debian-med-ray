@@ -25,6 +25,8 @@ ray (2.1.0-1) stable; urgency=low
   * Now packaging 3 packages: ray, ray-extra, ray-doc
   * Added Tim Booth as a uploader
   * Fixed non-ASCII symbols in the man page
+  * Fixed lintian warning for watch file
+  * Switched to debhelper 9 for hardening
   * Initial Debian release, Closes: #692238
 
  -- Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>  Fri, 02 Nov 2012 19:39:00 +0000

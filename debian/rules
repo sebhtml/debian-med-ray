@@ -4,7 +4,9 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+CPPFLAGS=$(shell dpkg-buildflags --get CPPFLAGS)
 CXXFLAGS=$(shell dpkg-buildflags --get CXXFLAGS)
+CXXFLAGS+=$(CPPFLAGS)
 CXXFLAGS+=-I. -I../RayPlatform -DHAVE_LIBZ -DHAVE_LIBBZ2 
 CXXFLAGS+=-DRAY_VERSION=\\\\\\\"2.1.0\\\\\\\" 
 

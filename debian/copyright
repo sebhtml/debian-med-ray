@@ -4,11 +4,38 @@ Upstream-Contact: Sébastien Boisvert <sebastien.boisvert.3@ulaval.ca>
 Source: http://denovoassembler.sf.net/
 
 Files: code/*/*
-Copyright (C) 2009, 2010, 2011, 2012 Sébastien Boisvert
-License: GPLv3
+Copyright: Copyright (C) 2009, 2010, 2011, 2012 Sébastien Boisvert
+License: GPL-3
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, version 3 of the License.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You have received a copy of the GNU General Public License
+ along with this program (gpl-3.0.txt).
+ see <http://www.gnu.org/licenses/>
+Comment: On Debian systems, the complete text of the GNU General Public
+ License version 3 can be found in /usr/share/common-licenses/GPL-3
 
 Files: RayPlatform/*/*
-Copyright (C) 2012 Sébastien Boisvert
-License: LGPLv3
+Copyright: Copyright (C) 2012 Sébastien Boisvert
+License: LGPL-3
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as published by
+ the Free Software Foundation, version 3 of the License.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Lesser General Public License for more details.
+ .
+ You have received a copy of the GNU Lesser General Public License
+ along with this program (lgpl-3.0.txt).  
+ see <http://www.gnu.org/licenses/>
+Comment: On Debian systems, the complete text of the GNU Lesser General Public
+ License version 3 can be found in /usr/share/common-licenses/LGPL-3
 
-see "/usr/share/common-licenses/".

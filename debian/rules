@@ -4,16 +4,20 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+CXXFLAGS=$(shell dpkg-buildflags --get CXXFLAGS)
+CXXFLAGS+=-I. -I../RayPlatform -DHAVE_LIBZ -DHAVE_LIBBZ2 
+CXXFLAGS+=-DRAY_VERSION=\\\\\\\"2.1.0\\\\\\\" 
+
 %:
 	dh $@ 
 
 override_dh_auto_clean :
-	dh_auto_clean --  HAVE_LIBZ=y HAVE_LIBBZ2=y
+	dh_auto_clean -- HAVE_LIBZ=y HAVE_LIBBZ2=y
 	rm -rf install-prefix
 	rm -f README.Ray  README.RayPlatform
 
 override_dh_auto_build :
-	dh_auto_build -- HAVE_LIBZ=y HAVE_LIBBZ2=y
+	dh_auto_build -- CXXFLAGS="$(CXXFLAGS)" HAVE_LIBBZ2=y HAVE_LIBZ=y
 	#Rename 2 docs to make more sence in package context
 	cp README.md README.Ray
 	cp RayPlatform/README README.RayPlatform

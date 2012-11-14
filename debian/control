@@ -44,7 +44,7 @@ Package: ray-extra
 Section: science
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends},
-  ${python:Depends}, r-base-core
+  ${python:Depends}, r-base-core, python
 Description: Scripts and XSL sheets for post-processing
  Ray is a parallel software that computes de novo genome assemblies with   
  next-generation sequencing data.

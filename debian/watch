@@ -1,2 +1,2 @@
 version=3
-http://sf.net/denovoassembler/Ray-v(.+)\.tar\.bz2
+http://sf.net/denovoassembler/Ray-v?(\d[\d\.]+)\.tar\.bz2

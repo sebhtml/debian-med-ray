@@ -1,3 +1,10 @@
+ray (2.1.0-2) UNRELEASED; urgency=low
+
+  * debian/control:
+     - Priority should by optional
+
+ -- Andreas Tille <tille@debian.org>  Tue, 22 Jan 2013 14:15:27 +0100
+
 ray (2.1.0-1) unstable; urgency=low
 
   * Initial Debian release, Closes: #692238
